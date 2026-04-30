@@ -49,9 +49,9 @@ Built an interactive dashboard featuring:
 ---
 
 ## Key SQL Concepts Used
-- `ROUND`
 - `COUNT`,`SUM`, and `AVG` for aggregations
 - `DATE_FORMAT`
+- `ROUND`
 
 ---
 
