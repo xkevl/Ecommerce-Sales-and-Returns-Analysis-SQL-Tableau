@@ -69,7 +69,7 @@ Built an interactive dashboard featuring:
 - Delivery times have no clear impact on return rates
 - Regional analysis highlights variations in both revenue generation and return behavior
 
-![Dashboard](ecommerce_analysis_screenshot.png)
+![Dashboard](tableau/ecommerce_analysis_screenshot.png)
 
 ## Key Takeaways
 
