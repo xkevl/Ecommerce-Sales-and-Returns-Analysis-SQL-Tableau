@@ -35,6 +35,9 @@ Using SQL, I cleaned and analyzed the dataset, engineered key business metrics, 
 /sql
 - ecommerce_analysis.sql
 
+/tableau
+- ecommerce_analysis_screenshot.png
+
 ## Key Metrics Created
 
 - Total revenue
