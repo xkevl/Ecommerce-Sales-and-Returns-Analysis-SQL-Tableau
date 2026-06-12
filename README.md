@@ -72,6 +72,7 @@ The Tableau dashboard includes:
 - Interactive filters by region, category, and discount level
 
 View the interactive dashboard on Tableau Public: [Bank Customer Churn Dashboard](https://public.tableau.com/app/profile/kevin.lim7109/viz/ecommerceanalysis_17775369074360/ecommerceanalysis)
+
 ![Dashboard](ecommerce_analysis_screenshot.png)
 
 ## Key Insights
