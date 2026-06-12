@@ -35,10 +35,6 @@ Using SQL, I cleaned and analyzed the dataset, engineered key business metrics, 
 /sql
 - ecommerce_analysis.sql
 
-/tableau
-- ecommerce_analysis.twbx
-- ecommerce_analysis_screenshot.png
-
 ## Key Metrics Created
 
 - Total revenue
@@ -75,6 +71,7 @@ The Tableau dashboard includes:
 - Delivery time vs return rate analysis
 - Interactive filters by region, category, and discount level
 
+View the interactive dashboard on Tableau Public: [Bank Customer Churn Dashboard](https://public.tableau.com/app/profile/kevin.lim7109/viz/ecommerceanalysis_17775369074360/ecommerceanalysis)
 ![Dashboard](tableau/ecommerce_analysis_screenshot.png)
 
 ## Key Insights
