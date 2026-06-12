@@ -1,10 +1,31 @@
 # E-Commerce Sales & Returns Analysis
 
-## Project Overview
+## Executive Summary
 
-This project analyzes e-commerce transactional data to uncover key drivers of revenue, customer behavior, and product performance. The workflow combines SQL for analysis with Tableau for interactive visualization.
+This project analyzes 100,000 synthetic e-commerce transactions to evaluate revenue performance, customer purchasing behavior, product category trends, discount effectiveness, delivery efficiency, and return patterns.
 
----
+Using SQL, I cleaned and analyzed the dataset, engineered key business metrics, and prepared the data for Tableau visualization. The final dashboard allows users to monitor revenue, orders, average order value, return rate, product performance, regional trends, and delivery-related return behavior.
+
+## Business Questions
+
+- Which product categories generate the most revenue?
+- How do revenue and order volume trend over time?
+- Which regions perform best by revenue and return rate?
+- Are higher discounts associated with higher or lower order value?
+- Does delivery time appear to influence return behavior?
+- Which customers generate the highest total sales?
+
+## Tools Used
+
+- SQL: data cleaning, metric creation, exploratory analysis
+- Tableau: dashboard development and interactive visualization
+- Excel/CSV: source data review
+
+## Dataset
+
+- Source: [Synthetic E-Commerce Sales Dataset 2025](https://www.kaggle.com/datasets/emirhanakku/synthetic-e-commerce-sales-dataset-2025)
+- Rows: 100,000
+- Columns: 13
 
 ## Project Structure
 
@@ -18,64 +39,61 @@ This project analyzes e-commerce transactional data to uncover key drivers of re
 - ecommerce_analysis.twbx
 - ecommerce_analysis_screenshot.png
 
----
+## Key Metrics Created
 
-## Data Preparation (SQL)
-- Cleaned and structured raw e-commerce transactional data for analysis
-- Transformed fields including revenue, order date, and return indicators
-- Engineered key features such as pre-discount order value to analyze pricing impact
-- Ensured data consistency for visualization in Tableau
+- Total revenue
+- Total orders
+- Average order value
+- Return rate
+- Pre-discount order value
+- Monthly revenue
+- Monthly order volume
+- Revenue by product category
+- Return rate by delivery time
+- Revenue by region
+- Customer-level total spend
 
----
+## SQL Techniques Used
 
-## Key Analyses
-- Revenue performance trends over time
-- Product category analysis based on total revenue contribution
-- Discount impact analysis on order value and purchasing behavior
-- Return rate analysis by delivery time and customer behavior
-- Regional performance comparison across revenue and return rates
-
----
+- Aggregations using `COUNT`, `SUM`, and `AVG`
+- Date formatting using `DATE_FORMAT`
+- Conditional calculations
+- Return rate calculations
+- Customer-level grouping
+- Revenue and discount analysis
+- Window functions for ranking and trend analysis
 
 ## Tableau Dashboard
-Built an interactive dashboard featuring:
-- KPI metrics (Total Revenue, Total Orders, Average Order, Return Rate)
-- Time-series analysis of revenue trends
-- Product category performance breakdown
-- Delivery efficiency vs return rate analysis
-- Regional performance visualization
-- Discount impact on revenue and original order value
 
----
+The Tableau dashboard includes:
 
-## Key SQL Concepts Used
-- `COUNT`,`SUM`, and `AVG` for aggregations
-- `DATE_FORMAT`
-- `ROUND`
-
----
-
-## Dataset
-- Source: [(https://www.kaggle.com/datasets/emirhanakku/synthetic-e-commerce-sales-dataset-2025)](https://www.kaggle.com/datasets/emirhanakku/synthetic-e-commerce-sales-dataset-2025)
-- Rows: 100,000
-- Columns: 13
-
----
-
-## Key Insights
-
-- Revenue trends over time show seasonal fluctuations in customer demand
-- Higher discount levels are associated with lower-value orders, suggesting targeted discounting strategies
-- Delivery times have no clear impact on return rates
-- Regional analysis highlights variations in both revenue generation and return behavior
+- KPI cards for total revenue, total orders, average order value, and return rate
+- Monthly revenue trend
+- Product category revenue breakdown
+- Regional revenue and return comparison
+- Discount impact analysis
+- Delivery time vs return rate analysis
+- Interactive filters by region, category, and discount level
 
 ![Dashboard](tableau/ecommerce_analysis_screenshot.png)
 
-## Key Takeaways
+## Key Insights
 
-This project demonstrates end-to-end data analysis:
+- Revenue fluctuated across the analyzed months, showing changes in customer demand over time.
+- Product category performance varied significantly, indicating opportunities to prioritize high-revenue categories.
+- Higher discount levels were associated with lower average revenue per order, suggesting discounts may not always increase order value.
+- Delivery time did not show a clear relationship with return rate, meaning other factors may better explain customer returns.
+- Regional revenue and return behavior varied, suggesting region-specific sales and return strategies may be useful.
 
-* Data preparation
-* Exploratory analysis
-* Metric development
-* Data visualization and storytelling
+## Recommendations
+
+- Focus marketing and inventory planning around the highest-revenue product categories.
+- Review discount strategy to determine whether high discount levels are reducing order value without improving customer behavior.
+- Investigate return behavior by product category and customer rating, since delivery time alone does not appear to explain returns.
+- Use regional performance differences to tailor promotions, shipping policies, or product assortment by market.
+
+## Limitations
+
+- The dataset is synthetic, so findings should be treated as practice analysis rather than real business conclusions.
+- The analysis is descriptive and does not prove causation.
+- Additional fields such as profit margin, shipping cost, customer acquisition channel, and product-level detail would allow deeper business analysis.
