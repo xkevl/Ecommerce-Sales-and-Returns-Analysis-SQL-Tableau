@@ -36,6 +36,7 @@ Using SQL, I cleaned and analyzed the dataset, engineered key business metrics, 
 - ecommerce_analysis.sql
 
 /tableau
+- ecommerce_analysis.twbx
 - ecommerce_analysis_screenshot.png
 
 ## Key Metrics Created
